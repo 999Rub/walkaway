@@ -173,13 +173,15 @@ class DataBaseService {
     var coll = await usersCollection.get();
 
     for (var item in coll.docs) {
-      leaderboardList.add(UserData(
-          name: (item.data() as Map)['name'],
-          totalDistance: ((item.data() as Map)['totalDistance']) != null
-              ? ((item.data() as Map)['totalDistance']).round()
-              : 0,
-          globalLevel: (item.data() as Map)['globalLevel'],
-          ranking: (item.data() as Map)['ranking']));
+      if ((item.data() as Map)['totalDistance'] > 100) {
+        leaderboardList.add(UserData(
+            name: (item.data() as Map)['name'],
+            totalDistance: ((item.data() as Map)['totalDistance']) != null
+                ? ((item.data() as Map)['totalDistance']).round()
+                : 0,
+            globalLevel: (item.data() as Map)['globalLevel'],
+            ranking: (item.data() as Map)['ranking']));
+      }
     }
 
     leaderboardList.sort((a, b) => b.totalDistance.compareTo(a.totalDistance));
