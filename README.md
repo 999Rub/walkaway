@@ -1,3 +1,3 @@
 # walkaway
 
-Flutter steps counter project, with leaderboard.
+Android Flutter steps counter project, with leaderboard.
