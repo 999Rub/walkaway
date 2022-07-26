@@ -110,7 +110,7 @@ class _GeoCalculatorState extends State<GeoCalculator> {
             return Wrap(
               children: [
                 Padding(
-                  padding: EdgeInsets.only(left: 40, top: 50),
+                  padding: const EdgeInsets.only(left: 40, top: 50),
                   child: Column(
                     children: [
                       Wrap(
@@ -119,7 +119,7 @@ class _GeoCalculatorState extends State<GeoCalculator> {
                           Column(
                             children: [
                               Padding(
-                                padding: EdgeInsets.all(8),
+                                padding: const EdgeInsets.all(8),
                                 child: Text('Total',
                                     style: GoogleFonts.yanoneKaffeesatz(
                                         fontSize: 40,
@@ -132,11 +132,11 @@ class _GeoCalculatorState extends State<GeoCalculator> {
                                 backgroundColor: Colors.transparent,
                                 animation: false,
                                 maskFilter:
-                                    MaskFilter.blur(BlurStyle.solid, 3.5),
+                                    const MaskFilter.blur(BlurStyle.solid, 3.5),
                                 percent: _user.totalPercentage! / 15000,
                                 animationDuration: 1200,
                                 circularStrokeCap: CircularStrokeCap.round,
-                                progressColor: Color(0xff58cebb),
+                                progressColor: const Color(0xff58cebb),
                                 center: Text(
                                   _user.totalDistance!.round().toString() + 'm',
                                   style: GoogleFonts.yanoneKaffeesatz(
@@ -146,7 +146,7 @@ class _GeoCalculatorState extends State<GeoCalculator> {
                                 ),
                               ),
                               Padding(
-                                padding: EdgeInsets.only(top: 50),
+                                padding: const EdgeInsets.only(top: 50),
                                 child: Text('LvL',
                                     style: GoogleFonts.yanoneKaffeesatz(
                                         fontSize: 40,
@@ -159,11 +159,11 @@ class _GeoCalculatorState extends State<GeoCalculator> {
                                 backgroundColor: Colors.transparent,
                                 animation: false,
                                 maskFilter:
-                                    MaskFilter.blur(BlurStyle.solid, 3.5),
+                                    const MaskFilter.blur(BlurStyle.solid, 3.5),
                                 percent: _user.currentLvl! / 100,
                                 animationDuration: 1200,
                                 circularStrokeCap: CircularStrokeCap.round,
-                                progressColor: Color(0xfff7466f),
+                                progressColor: const Color(0xfff7466f),
                                 center: Text(
                                   _user.globalLevel!.round().toString(),
                                   style: GoogleFonts.yanoneKaffeesatz(
@@ -184,7 +184,7 @@ class _GeoCalculatorState extends State<GeoCalculator> {
                   child: Column(
                     children: [
                       Padding(
-                        padding: EdgeInsets.all(8),
+                        padding: const EdgeInsets.all(8),
                         child: Text('Daily',
                             style: GoogleFonts.yanoneKaffeesatz(
                                 fontSize: 40,
@@ -196,7 +196,7 @@ class _GeoCalculatorState extends State<GeoCalculator> {
                         lineWidth: 13,
                         backgroundColor: Colors.transparent,
                         animation: false,
-                        maskFilter: MaskFilter.blur(BlurStyle.solid, 3.5),
+                        maskFilter: const MaskFilter.blur(BlurStyle.solid, 3.5),
                         percent: _user.dailyPercentage! / 3000,
                         animationDuration: 1200,
                         circularStrokeCap: CircularStrokeCap.round,
@@ -238,7 +238,7 @@ class _GeoCalculatorState extends State<GeoCalculator> {
               ],
             );
           } else {
-            return Loading();
+            return const Loading();
           }
         });
     ;

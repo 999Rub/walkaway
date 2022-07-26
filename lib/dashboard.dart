@@ -45,7 +45,7 @@ class _DashboardState extends State<Dashboard> {
                 initialData: null,
                 value: DataBaseService(uid: _user.uid).userData,
                 child: Scaffold(
-                    backgroundColor: Color(0xff17171a),
+                    backgroundColor: const Color(0xff17171a),
                     body: ListView(
                       scrollDirection: Axis.vertical,
                       children: <Widget>[
@@ -58,7 +58,7 @@ class _DashboardState extends State<Dashboard> {
                                       fontSize: 50,
                                       color: Colors.white,
                                       fontWeight: FontWeight.bold)),
-                              SizedBox(
+                              const SizedBox(
                                 width: 20,
                               ),
                               Flexible(
@@ -75,20 +75,21 @@ class _DashboardState extends State<Dashboard> {
                             ],
                           ),
                         ),
-                        GeoCalculator(),
+                        const GeoCalculator(),
                         Wrap(
                           children: <Widget>[
                             Column(
                               children: <Widget>[
                                 Padding(
-                                  padding: EdgeInsets.only(top: 60, bottom: 35),
+                                  padding: const EdgeInsets.only(
+                                      top: 60, bottom: 35),
                                   child: Text('LeaderBoard',
                                       style: GoogleFonts.yanoneKaffeesatz(
                                           fontSize: 50,
                                           color: Colors.white,
                                           fontWeight: FontWeight.bold)),
                                 ),
-                                LeaderBoard(),
+                                const LeaderBoard(),
                                 Padding(
                                   padding: const EdgeInsets.only(
                                       top: 100, bottom: 100),
