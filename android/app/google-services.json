@@ -1,0 +1,46 @@
+{
+  "project_info": {
+    "project_number": "894927705964",
+    "project_id": "go-outside-b421f",
+    "storage_bucket": "go-outside-b421f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:894927705964:android:9abb0d6b64c39f1e204549",
+        "android_client_info": {
+          "package_name": "com.example.go_outside_you_bitch"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "894927705964-pmf0s4hfok7ifuansrhlnmriel2ernmm.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA7Ahs_vYstgshODfmirnbSflFYuCNv5Os"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "894927705964-pmf0s4hfok7ifuansrhlnmriel2ernmm.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "894927705964-068lkng56ngq11ruo8lfk8daa8cmo7hm.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.goOutsideYouBitch"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
